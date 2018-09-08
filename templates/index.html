@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Collector app</title>
+    <link rel="stylesheet" href="../static/style.css"> 
+</head>
+
+<body>
+    <div class="container">
+        <H1>Collenting data</H1>
+        <p>Please fill your data below</p>
+        <form action="{{url_for('success')}}" method="POST">
+            <input title="NO WORRY" placeholder="Put your email here" type="email" name="email_name" required>
+            <br/>
+            <input title="NO WORRY" placeholder="Put your height here" type="number" name="number_name" required>
+            <br/>
+            <button type="submit">
+                <p>Submit</p>
+            </button>
+        </form>
+    </div>
+
+</body>
+
+</html>
